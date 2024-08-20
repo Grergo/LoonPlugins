@@ -25,6 +25,6 @@ beforeResponse.data.baby.have_baby = 99;
 beforeResponse.data.baby.baby_expires = 2555942400;
 
 afterResponse.headers = $response.headers;
-afterResponse.body = beforeResponse;
+afterResponse.body = JSON.stringify(beforeResponse);
 
 $done(afterResponse);
